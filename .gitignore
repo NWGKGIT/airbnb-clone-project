@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.env
+.env.*
+venv/
+.venv/
+ENV/
+env/
+venv.bak/
+pip-wheel-metadata/
+
+# Django
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/            # collected static files
+# (Don't ignore app-level static/ if you keep it in source)
+
+# PostgreSQL dumps / exports
+*.sql
+*.dump
+
+# Testing / coverage
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Type checkers / caches
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Celery
+celerybeat-schedule
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if your project includes JS tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker local overrides / envs
+docker-compose.override.yml
+
+# Misc
+.ipynb_checkpoints/
+*.log
+*.pid
+docs/_build/
+secrets.json
+.python-version
