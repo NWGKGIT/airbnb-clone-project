@@ -52,23 +52,23 @@ Coordinates development tasks, manages timelines, and ensures milestone delivery
 ### Entities and Fields
 
 **Users**  
-Fields: user_id, first_name, last_name, email (unique), password, phone_number, profile_picture, is_host, address, verified, created_at, updated_at  
+Fields: `user_id`, `first_name`, `last_name`, `email (unique)`, `password`, `phone_number`, `profile_picture`, `is_host`, `address`, `verified`, `created_at`, `updated_at`  
 → A user can create multiple properties and bookings.
 
 **Properties**  
-Fields: property_id, title, description, price_per_night, max_guests, num_bedrooms, num_bathrooms, address, latitude, longitude, owner_id, is_available, created_at, updated_at  
+Fields: `property_id`, `title`, `description`, `price_per_night`, `max_guests`, `num_bedrooms`, `num_bathrooms`, `address`, `latitude`, `longitude`, `owner_id`, `is_available`, `created_at`, `updated_at`  
 → Each property belongs to one user (the host).
 
 **Bookings**  
-Fields: booking_id, user_id (guest), property_id, start_date, end_date, total_price, status, created_at, updated_at  
+Fields: `booking_id`, `user_id (guest)`, `property_id`, `start_date`, `end_date`, `total_price`, `status`, `created_at`, `updated_at`  
 → Each booking connects a guest to a property.
 
 **Reviews**  
-Fields: review_id, user_id, property_id, rating, comment, created_at  
+Fields: `review_id`, `user_id`, `property_id`, `rating`, `comment`, `created_at`  
 → Each review belongs to one user and one property.
 
 **Payments**  
-Fields: payment_id, booking_id, amount, status, transaction_date  
+Fields: `payment_id`, `booking_id`, `amount`, `status`, `transaction_date`  
 → Each payment is tied to a specific booking.
 
 ### Relationships
